@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cygnus_X01AD.mk
+    $(LOCAL_DIR)/evolution_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    cygnus_X01AD-user \
-    cygnus_X01AD-userdebug \
-    cygnus_X01AD-eng
+    evolution_X01AD-user \
+    evolution_X01AD-userdebug \
+    evolution_X01AD-eng
