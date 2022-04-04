@@ -22,13 +22,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/asus/X01AD/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cygnus/config/common_full_phone.mk)
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Device identifiers.
-PRODUCT_NAME := cygnus_X01AD
+PRODUCT_NAME := evolution_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
@@ -36,10 +36,10 @@ PRODUCT_MODEL := ASUS Max M2
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
-Cygnus_BUILD_MAINTAINER := Wayne
+evolution_BUILD_MAINTAINER := Wayne
 
 # ArrowOS additions
-cygnus_BUILD_MAINTAINER := Wayne
+Evolution_BUILD_MAINTAINER := Wayne
 
 DEVICE_MAINTAINER := Wayne
 
