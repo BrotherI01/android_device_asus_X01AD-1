@@ -21,13 +21,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/asus/X01AD/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Device identifiers.
-PRODUCT_NAME := lineage_X01AD
+PRODUCT_NAME := komodo_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
@@ -35,11 +35,18 @@ PRODUCT_MODEL := ASUS Max M2
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
-# ArrowOS additions
+# komodo additions
+TARGET_BOOT_ANIMATION_RES := 720
+KOMODO_GAPPS_TYPE := nogapps
+TARGET_FACE_UNLOCK := true
+TARGET_USES_BLUR := true
+TARGET_USES_AOSP_CHARGER := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+IS_PHONE := true
 
 DEVICE_MAINTAINER := Wayne
 
-BUILD_FINGERPRINT := "asus/WW_X01AD/ASUS_X01A_1:10/WW_Phone-202005071625/17.2018.2004.31-20200507:user/release-keys"
+BUILD_FINGERPRINT := "google/redfin/redfin:12/SP2A.220405.003/8210211:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="msm8953_64-user 10 WW_Phone-202005071625 17.2018.2004.31-20200507 release-keys"
+    PRIVATE_BUILD_DESC="redfin-user 12 SP2A.220405.003 8210211 release-keys"
