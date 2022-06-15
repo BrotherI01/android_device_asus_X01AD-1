@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_X01AD.mk
+    $(LOCAL_DIR)/komodo_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_X01AD-user \
-    lineage_X01AD-userdebug \
-    lineage_X01AD-eng
+    komodo_X01AD-user \
+    komodo_X01AD-userdebug \
+    komodo_X01AD-eng
