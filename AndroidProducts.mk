@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/komodo_X01AD.mk
+    $(LOCAL_DIR)/aosp_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    komodo_X01AD-user \
-    komodo_X01AD-userdebug \
-    komodo_X01AD-eng
+    aosp_X01AD-user \
+    aosp_X01AD-userdebug \
+    aosp_X01AD-eng
